@@ -6,6 +6,7 @@ defmodule Example.MixProject do
       app: :example,
       version: "0.1.0",
       elixir: "~> 1.14.5",
+      deps: deps(),
       escript: escript()
     ]
   end
@@ -15,6 +16,13 @@ defmodule Example.MixProject do
     [
       mod: {Example, []},
       extra_applications: [:logger]
+    ]
+  end
+
+  defp deps() do
+    [
+      {:cachex, "~> 3.4.0"},
+      {:jemalloc_info, "~> 0.3.0"}
     ]
   end
 
