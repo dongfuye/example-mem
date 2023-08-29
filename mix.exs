@@ -22,6 +22,7 @@ defmodule Example.MixProject do
   defp deps() do
     [
       {:cachex, "~> 3.4.0"},
+      {:rustler, "~> 0.29.1"},
       {:jemalloc_info, "~> 0.3.0"}
     ]
   end
